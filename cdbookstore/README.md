@@ -24,7 +24,8 @@ $ yarn add @ng-bootstrap/ng-bootstrap@2.2.2
 The main application has two components
 
 ```
-$ ng generate component home 
+$ ng generate component home --inline-style true --spec false
+$ ng generate component about --inline-style true --spec false
 ```
 
 #### Configuration
