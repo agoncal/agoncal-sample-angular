@@ -7,6 +7,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { GeneratorModule } from 'generator';
+import { InventoryModule } from 'inventory';
+import { StoreModule } from 'store';
 
 @NgModule({
   declarations: [
@@ -15,6 +18,9 @@ import { AboutComponent } from './about/about.component';
     AboutComponent
   ],
   imports: [
+    GeneratorModule,
+    InventoryModule,
+    StoreModule,
     BrowserModule,
     AppRoutingModule,
     NgbModule.forRoot()

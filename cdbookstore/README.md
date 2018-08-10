@@ -74,6 +74,12 @@ $ yarn add bootstrap@4.1.3
 $ yarn add @ng-bootstrap/ng-bootstrap@2.2.2
 ```
 
+Build the library so you can use it
+
+```
+$ ng build store
+```
+
 ### Inventory Library
 
 #### NG CLI Commands
@@ -83,6 +89,12 @@ $ yarn add @ng-bootstrap/ng-bootstrap@2.2.2
 $ ng generate library inventory --prefix inv
 ```
 
+Build the library so you can use it
+
+```
+$ ng build inventory
+```
+
 ### Number Generator Library
 
 #### NG CLI Commands
@@ -90,6 +102,12 @@ $ ng generate library inventory --prefix inv
 ```
 # Create a new Angular library with Angular CLI
 $ ng generate library generator --prefix gen
+```
+
+Build the library so you can use it
+
+```
+$ ng build generator
 ```
 
 ## Development server
