@@ -2,6 +2,70 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
 
+## How the project was created
+
+Here are the commands and the steps that were used to create this project 
+
+### Main application CDBookStore
+
+#### NG CLI Commands
+
+```
+# Create a new Angular project with Angular CLI
+$ ng new cdbookstore --directory cdbookstore --routing true --skip-tests true --inline-style true
+
+# Add the needed dependencies
+$ yarn add @fortawesome/fontawesome-free@5.2.0
+$ yarn add jquery@3.3.1
+$ yarn add bootstrap@4.1.3
+$ yarn add @ng-bootstrap/ng-bootstrap@2.2.2
+```
+
+#### Configuration
+
+In `angular.json` file add :
+
+```
+"styles": [
+  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "node_modules/@fortawesome/fontawesome-free/css/all.css",
+  "src/jumbotron.css",
+  {
+    "input": "src/styles.css"
+  }
+],
+"scripts": [
+  "node_modules/jquery/dist/jquery.slim.js",
+  "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+]
+```
+
+In `app.module.ts` add NG Bootstrap
+
+```
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+  imports: [
+    NgbModule.forRoot()
+  ],
+```
+
+
+### Store Library
+
+#### NG CLI Commands
+
+```
+# Create a new Angular library with Angular CLI
+$ ng new cdbookstore --directory cdbookstore --routing true --skip-tests true --inline-style true
+
+# Add the needed dependencies
+$ yarn add @fortawesome/fontawesome-free@5.2.0
+$ yarn add jquery@3.3.1
+$ yarn add bootstrap@4.1.3
+$ yarn add @ng-bootstrap/ng-bootstrap@2.2.2
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
