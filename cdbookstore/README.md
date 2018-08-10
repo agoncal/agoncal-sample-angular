@@ -21,6 +21,12 @@ $ yarn add bootstrap@4.1.3
 $ yarn add @ng-bootstrap/ng-bootstrap@2.2.2
 ```
 
+The main application has two components
+
+```
+$ ng generate component home 
+```
+
 #### Configuration
 
 In `angular.json` file add :
@@ -57,13 +63,32 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 ```
 # Create a new Angular library with Angular CLI
-$ ng new cdbookstore --directory cdbookstore --routing true --skip-tests true --inline-style true
+$ ng generate library store --prefix str
+$ ng generate component store --project store --inline-style true
 
 # Add the needed dependencies
 $ yarn add @fortawesome/fontawesome-free@5.2.0
 $ yarn add jquery@3.3.1
 $ yarn add bootstrap@4.1.3
 $ yarn add @ng-bootstrap/ng-bootstrap@2.2.2
+```
+
+### Inventory Library
+
+#### NG CLI Commands
+
+```
+# Create a new Angular library with Angular CLI
+$ ng generate library inventory --prefix inv
+```
+
+### Number Generator Library
+
+#### NG CLI Commands
+
+```
+# Create a new Angular library with Angular CLI
+$ ng generate library generator --prefix gen
 ```
 
 ## Development server
@@ -89,3 +114,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## References
+
+* [How to build a library for Angular apps?](https://medium.com/@tomsu/how-to-build-a-library-for-angular-apps-4f9b38b0ed11)
+* [BOOTSTRAP SIDEBAR](https://bootstrapious.com/p/bootstrap-sidebar)

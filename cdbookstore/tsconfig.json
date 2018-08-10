@@ -16,6 +16,26 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "store": [
+        "dist/store"
+      ],
+      "store/*": [
+        "dist/store/*"
+      ],
+      "inventory": [
+        "dist/inventory"
+      ],
+      "inventory/*": [
+        "dist/inventory/*"
+      ],
+      "generator": [
+        "dist/generator"
+      ],
+      "generator/*": [
+        "dist/generator/*"
+      ]
+    }
   }
 }
