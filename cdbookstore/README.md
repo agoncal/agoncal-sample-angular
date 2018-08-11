@@ -66,12 +66,18 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 # Create a new Angular library with Angular CLI
 $ ng generate library store --prefix str
 $ ng generate component store --project store --inline-style true
+```
 
-# Add the needed dependencies
-$ yarn add @fortawesome/fontawesome-free@5.2.0
-$ yarn add jquery@3.3.1
-$ yarn add bootstrap@4.1.3
-$ yarn add @ng-bootstrap/ng-bootstrap@2.2.2
+The Store library has several components
+
+```
+$ ng generate component Home --project store --inline-style true --spec false
+$ ng generate component BookList --project store --inline-style true --spec false
+$ ng generate component BookDetail --project store --inline-style true --spec false
+$ ng generate component CdList --project store --inline-style true --spec false
+$ ng generate component CdDetail --project store --inline-style true --spec false
+$ ng generate component DvdList --project store --inline-style true --spec false
+$ ng generate component DvdDetail --project store --inline-style true --spec false
 ```
 
 Build the library so you can use it
@@ -89,6 +95,13 @@ $ ng build store
 $ ng generate library inventory --prefix inv
 ```
 
+The Inventory library has several components
+
+```
+$ ng generate component Home --project inventory --inline-style true --spec false
+$ ng generate component ItemList --project inventory --inline-style true --spec false
+```
+
 Build the library so you can use it
 
 ```
@@ -104,12 +117,13 @@ $ ng build inventory
 $ ng generate library generator --prefix gen
 ```
 
-The Generator Library has three components
+The Generator library has several components
 
 ```
+$ ng generate component Home --project generator --inline-style true --spec false
 $ ng generate component BookNumber --project generator --inline-style true --spec false
-$ ng generate component CDNumber --project generator --inline-style true --spec false
-$ ng generate component DVDNumber --project generator --inline-style true --spec false
+$ ng generate component CdNumber --project generator --inline-style true --spec false
+$ ng generate component DvdNumber --project generator --inline-style true --spec false
 ```
 
 Build the library so you can use it
