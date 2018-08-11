@@ -2,6 +2,28 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
 
+## How to execute the project
+
+To execute this code you need Node.JS, Yarn and Angular CLI
+
+After getting the code, type the following commands : 
+
+```
+cdbookstore $ yarn
+cdbookstore $ ng build generator
+cdbookstore $ ng build inventory
+cdbookstore $ ng build store
+cdbookstore $ ng serve
+```
+
+Then go to : http://localhost:4200
+
+When you navigate, you will see that the URL changes depending on the project (Generator, Inventory, Store)
+
+* http://localhost:4200/str
+* http://localhost:4200/inv
+* http://localhost:4200/gen
+
 ## How the project was created
 
 Here are the commands and the steps that were used to create this project 
