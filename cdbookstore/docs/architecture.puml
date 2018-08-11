@@ -1,0 +1,25 @@
+@startuml
+left to right direction
+
+actor "Users" as user
+actor "Admin" as admin
+
+node "User Interface" as ui #f8f9fa
+node "Store API" as strapi #e3f2fd
+node "Inventory API" as invapi #007bff
+node "Generator API" as genapi #343a40
+
+database "Store" as dbstr #e3f2fd
+database "Inventory" as dbinv #007bff
+
+user ..> ui
+admin ..> ui
+
+ui ..> strapi
+ui ..> invapi
+ui ..> genapi
+
+strapi --> dbstr
+invapi --> dbinv
+
+@enduml
