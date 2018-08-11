@@ -104,6 +104,14 @@ $ ng build inventory
 $ ng generate library generator --prefix gen
 ```
 
+The Generator Library has three components
+
+```
+$ ng generate component BookNumber --project generator --inline-style true --spec false
+$ ng generate component CDNumber --project generator --inline-style true --spec false
+$ ng generate component DVDNumber --project generator --inline-style true --spec false
+```
+
 Build the library so you can use it
 
 ```
